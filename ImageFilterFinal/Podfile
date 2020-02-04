@@ -1,0 +1,5 @@
+target 'ImageFilter' do
+  use_frameworks!
+	pod 'SteviaLayout'
+	pod 'EVGPUImage2', '~> 0.2'
+end
