@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         centerView.frame.size = CGSize(width: 20, height: 20)
         centerView.center = view.center
         centerView.layer.cornerRadius = centerView.bounds.width/2
+        // maskToBounds = true để loại bỏ các phần thừa của các sublayers ngoài ranh giới
         centerView.layer.masksToBounds = true
         centerView.backgroundColor = UIColor.black
         
@@ -53,6 +54,7 @@ class ViewController: UIViewController {
         let r = kimView.bounds.size.height/2
         kimView.layer.cornerRadius = r // bo viền
         
+        // sử dụng setAnchorPoint để thay đổi điểm neo của một đối tượng mà không dịch chuyển nó
         setAnchorPoint(kimView: kimView, point: CGPoint(x: 0, y: 0.5))
         kimView.transform = CGAffineTransform(rotationAngle: alpha)
     }
@@ -70,18 +72,22 @@ class ViewController: UIViewController {
         let omegaPhut = CGAffineTransform(rotationAngle: CGFloat.pi*2/60/60)
         let omegaGio = CGAffineTransform(rotationAngle: CGFloat.pi*2/60/60/12)
         
+        // sử dụng concatenating để chuyển động của kim được liền mạch nối tiếp
         kimGiayView.transform = kimGiayView.transform.concatenating(omegaGiay)
         kimPhutView.transform = kimPhutView.transform.concatenating(omegaPhut)
         kimGioView.transform = kimGioView.transform.concatenating(omegaGio)
     }
     
     func setTimer() -> (hour: CGFloat, minute: CGFloat, second: CGFloat){
+        // lấy ra thời gian thực
         let hour = calendar.component(.hour, from: currentDate as Date)
         let minute = calendar.component(.minute, from: currentDate as Date)
         let second = calendar.component(.second, from: currentDate as Date)
+        print(hour, minute, second) // in ra thời gian thực
         let hourInAboutSecond = hour*60*60 + minute*60 + second
         let minuteInAboutSecond = minute*60 + second
         
+        // tính góc quay ban đầu theo thời gian thực, kể từ thời điểm 0h
         let firstAlphaHour = CGFloat.pi * (2*CGFloat(hourInAboutSecond)/12/60/60 - 0.5)
         let firstAlphaMinute = CGFloat.pi * (2*CGFloat(minuteInAboutSecond)/60/60 - 0.5)
         let firstAlphaSecond = CGFloat.pi * (2*CGFloat(second)/60 - 0.5)
