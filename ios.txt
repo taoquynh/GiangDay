@@ -1,0 +1,193 @@
+Lập trình Swift 5								
+	Các quy tắc khi code với Swift								
+	Khai báo biến với let, var								
+	Thống nhất quy tắc đặt tên biến								
+	Khai báo tên biến bằng hình ảnh								
+	Các kiểu dữ liệu cơ bản								
+	String và các hàm xử lý								
+	Toán tử số học								
+	Các lệnh điều kiện rẽ nhánh 								
+	Vòng lặp								
+	Key word trong statement						
+	Dictioneries								
+	Dictioneries với JSON								
+	Kiểu Optional trong Swift								
+	Phân biệt và sử dụng ? và ! khi unwrap optional								
+	Kiểu dữ liệu hỗn hợp Tuples								
+	Hàm và các cách khai báo hàm								
+	Closure 								
+	Struct, Class, Enum 								
+	Protocol 								
+	Hướng đối tượng trong Swift								
+								
+Lập trình iOS cơ bản								
+	Thiết kế giao diện với storyboard								
+		Màn hình chờ LaunchScreen.storyboard								
+		Màn hình thiết kế Main.storyboard								
+	Quản lý toạ độ và đối tượng								
+		Hệ trục toạ độ trong Xcode								
+		Cột thuộc tính								
+		ViewController Scene								
+	Giới thiệu UIView								
+		Các thuộc tính cơ bản								
+		Ý nghĩa và ứng dụng của UIView								
+	Giới thiệu ViewController và ViewCycle								
+		Tạo file ViewController mới								
+		Các hàm mặc định trong file ViewController								
+		ViewController 
+		Cycle 								
+	UILabel, UIButton, UITextField								
+		Tạo đối tượng UILabel, UIButton, UITextField								
+		Các thuộc tính cơ bản: màu sắc: font								
+		Các thuộc tính đặc trưng: placeholder text								
+		Action và Outlet, ánh xạ các đối tượng								
+		Tuỳ chỉnh thuộc tính các đối tượng								
+		Tuỳ chỉnh các đối tượng nâng cao với Swift file								
+		Bắt các sự kiện tương tác các đối tượng, ngưng nhập TextField			
+	UIImage								
+		Tỷ lệ hình ảnh và độ phân giải màn hình thiết bị Appple				
+		Quản lý hình ảnh với Assets								
+		Kĩ năng lựa chọn hình ảnh và vấn đề bản quyền								
+		UIImageView và UIImage								
+		Load hình Local từ hình ảnh trong app								
+		Load hình Online từ đường link url								
+	Camera & Photo								
+		UIImagePickerController								
+		Chọn ảnh từ thư viện ảnh của thiết bị.								
+		Chụp ảnh từ thiết bị thật.								
+	
+	UIAlertview								
+		Tạo thông báo với UIAlertController								
+		Gán các đối tượng vào UIAlertView								
+		Bắt sự kiện người dùng tương tác với các đối tượng trong AlertView								
+						
+	Điều hướng màn hình								
+		StoryBoard id								
+		Segues: Phân loại và ứng dụng								
+		NavigationController								
+		Custom NavigationBar								
+		Bắt sự kiện tương tác item navigation bar								
+		Chuyển màn hình bằng code								
+		Truyền dữ liệu giữa các màn hình								
+	UISlider								
+		UISlider và các thuộc tính cơ bản								
+		Cấu hình UISlider								
+		Bắt giá trị slider								
+		Tương tác người dùng với Slider								
+		Xoay dọc, Xoay ngang UISlider trên giao diện								
+		Custom giao diện của UISlider								
+	NSTimer								
+		NSTimer và vấn đề xử lý thời gian trong ứng dụng								
+		Cấu hình NSTimer								
+		Function trong timer								
+		Hiệu ứng animation với UIImage và NSTimer								
+		Màn hình chờ ứng dụng với NSTimer								
+
+	Gesture								
+		Long Press Gesture								
+		Rotation Gesture								
+		Pinch Gesture								
+		Swipe Gesture								
+		Pan Gesture								
+		Screen Egde Pan Gesture								
+		Shake Gesture													
+								
+Các Đối Tượng Hiển Thị Dữ Liệu								
+	UIScrollView						
+	UIPickerView									
+	UITableView							
+	UICollectionView	
+	UIWebView											
+								
+ Âm Thanh Và Videos								
+	AVFoundation								
+	Play nhạc local với AVAudioPlayer.								
+	Play nhạc online từ một đường link mp3.								
+	Pause, Stop, Volume.								
+	Lấy tổng thời lượng của bài nhạc Online.								
+	Lấy thời gian hiện tại của bài hát đang phát								
+	Kết hợp Slider điều chỉnh thời gian phát.								
+	AVKit								
+	Phát Video từ local.								
+	Phát Video từ Internet.								
+								
+Local Data								
+	CoreData															
+	Tạo một cơ sở dữ liệu CoreData.								
+	Truy xuất cơ sở dữ liệu CoreData.								
+	Xử lí cơ sở dữ liệu: Thêm, xoá, sửa									
+	Realm								
+	Tạo một cơ sở dữ liệu với Realm								
+	Truy xuất cơ sở dữ liệu Realm								
+	Xử lý cơ sở dữ liệu: Thêm, xoá, sửa								
+								
+Online Data								
+	WebService												
+								
+SOCKET IO								
+	SOCKET IO (Real time)								
+	Socket: Web Server với Socket.							
+	iOS Client: Truyền, nhận tín hiệu đến Server với thiết bị iOS	
+	Ứng dụng: Viết ứng dụng Chat với SocketIO								
+								
+Design Pattern								
+	MVC - Model View Controller								
+	Giới thiệu Design Pattern									
+	Xây dựng Model								
+	Xây dựng View								
+	Xây dựng Controller											
+	MVVM cơ bản								
+	So sánh MVC & MVVM									
+								
+Library & API								
+	SlideMenu								
+	Facebook API (login, share, like)		
+	Google API					
+									
+	Chương 11: Map & GPS								
+	Map Kit						
+	Google API															
+								
+Animation								
+	CoreGraphics								
+	Tạo UIView SubClass, và cách sử dụng DrawView								
+	Vẽ đường Line								
+	Vẽ đường Path								
+	Vẽ hình Rectangle								
+	Vẽ hình Eclipse & Circle								
+	Tô màu Line với Color								
+	Vẽ hình Arc								
+	Tạo đổ bóng cho hình.								
+	Tinh chỉnh/ lọc hình ảnh với Graphics Context								
+	Vẽ hình ảnh theo sự di chuyển ngón tay trên màn hình								
+	UIView Animation								
+	Tạo diễn hoạt với UIView.animate								
+	Bắt trạng thái Animation đang diễn ra với Completion								
+	Tạo diễn hoạt có Delay.								
+
+								
+Auto Layout Toàn Tập A-Z								
+	Toạ độ trên màn hình								
+	Bound và Frame								
+	4 thuộc tính cơ bản của một đối tượng trong Auto Layout								
+	Autolayout sử dụng Pin.								
+	Constrain to margin								
+	Top, bottom, leading,trailing								
+	Width, Height								
+	Equal width, equal height								
+	Aspect ratio								
+	Constant								
+	Priority								
+	Multiplier								
+	Autolay out sử dụng chuột								
+	Horizontal spacing								
+	Vertical spacing								
+	Top, bottom, leading,trailing								
+	Width, Height								
+	Equal width, equal height								
+	Aspect ratio								
+	Demo Autolayout 1 đối tượng với Supper view								
+	Demo Autolayout 2 đối tượng với nhau										
+	Autolayout ngược								
+	Xác định toạ độ x, y: Thuộc tính con sẽ quyết định kích thước của đối tượng chứa nó								
+	Width, heigh tự động thay đổi dựa vào các đối tượng con														
