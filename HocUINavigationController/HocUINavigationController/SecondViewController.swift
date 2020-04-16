@@ -13,9 +13,9 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor(red:0.00, green:0.60, blue:0.60, alpha:1.0)
+//        view.backgroundColor = UIColor(red:0.00, green:0.60, blue:0.60, alpha:1.0)
 //        view.backgroundColor = .red
-        navigationController?.navigationBar.barTintColor = UIColor.green
+//        navigationController?.navigationBar.barTintColor = UIColor.green
         navigationItem.title = "SecondViewController"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .done, target: self, action: #selector(veman1))
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "plus"), style: .done, target: self, action: #selector(plusFunc))

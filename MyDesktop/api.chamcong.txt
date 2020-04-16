@@ -1,0 +1,81 @@
+http://chamcong.oceanbank.vn/cio/api/token
+Method: POST
+Input:
+- domain: string
+- api_key: string
+Response:
+- checked: 0/1
+
+http://chamcong.oceanbank.vn/cio/api/user_signin
+Method: POST
+Input:
+- usr_name: string
+- usr_pwd: string
+- app_token: string
+Response:
+- signed: 0/1
+- msg: string
+- data: user object data
+
+
+http://chamcong.oceanbank.vn/cio/api/timekeeping_init
+Method: POST
+Input:
+- office_id: string
+Response:
+- checked: 0/1
+- office_id: string
+- data: office object data
+
+http://chamcong.oceanbank.vn/cio/api/timekeeping_checkin
+Method: POST
+Input:
+- access_token: string
+- app_token: string
+- usr_long: string
+- usr_lat: string
+Response:
+- success: 0/1
+- valid: 0/1
+- distance: string
+- updated_date: string
+- msg: string
+
+http://chamcong.oceanbank.vn/cio/api/offwork_category
+Method: POST
+Input:
+- access_token: string
+- app_token: string
+- reason: string
+- off_from_date: string
+- off_to_date: string
+Response:
+- success: 0/1
+- categories: array of categories object
+
+http://chamcong.oceanbank.vn/cio/api/offwork_register
+Method: POST
+Input:
+- access_token: string
+- app_token: string
+- reason: string
+- off_from_date: string
+- off_to_date: string
+Response:
+- success: 0/1
+- valid: 0/1
+- distance: string
+- updated_date: string
+- msg: string
+
+
+http://chamcong.oceanbank.vn/cio/api/user_autosignin
+Method: POST
+Input:
+- usr_id: string
+- app_token: string
+- access_token: string
+Response:
+- signed: 0/1
+- msg: string
+- data: user object

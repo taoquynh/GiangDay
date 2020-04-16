@@ -69,6 +69,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let item = DBManager.sharedInstance.getDataFromDB()[indexPath.row] as Item
         cell.textLabel?.text = item.name
 //        cell.detailTextLabel?.text = "abc"
+//        print(item.myDog?.name)
         return cell
     }
     

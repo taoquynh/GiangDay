@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SVb-uN-VhG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="uTu-jQ-1hH">
+            <objects>
+                <viewController id="YLS-SJ-1NJ" customClass="ViewController" customModule="NavigationControllerInStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rIL-zZ-UkH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="XGs-E6-1hX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="fTf-7W-1Pk">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="folder" catalog="system" id="YZz-SH-CyC">
+                            <connections>
+                                <segue destination="bbN-B6-Qih" kind="presentation" id="Kp1-aK-lju"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Go" id="1Fl-eJ-aku">
+                            <connections>
+                                <segue destination="hXe-37-kxs" kind="push" id="h6D-nx-HAL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G2C-JX-mEy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3684.057971014493" y="99.776785714285708"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uob-nY-x65">
+            <objects>
+                <viewController id="bbN-B6-Qih" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fO9-fH-V7b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.99831159059999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="9qD-jx-U81"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vS-v2-Dbl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3683" y="753"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="iU7-vw-uIE">
+            <objects>
+                <viewController id="hXe-37-kxs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jW5-53-Rkj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.80730088479999995" green="1" blue="0.89047654089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ug6-eO-ygv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="P7P-0g-Wk3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNS-PW-L5Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4375" y="98"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="M5z-Ka-asE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SVb-uN-VhG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="tb3-to-bac">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YLS-SJ-1NJ" kind="relationship" relationship="rootViewController" id="pq9-u5-83l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZxJ-mx-S8I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2773.913043478261" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="64" height="46"/>
+    </resources>
+</document>
